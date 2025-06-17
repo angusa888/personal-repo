@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Use a clean sans-serif font */
+    line-height: 1.6; /* Improve readability */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding around the content */
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+/* Container for buttons and modals */
+.container {
+    max-width: 600px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container */
+    text-align: center; /* Center-align text within the container */
+}
+
+/* Button Styles */
+button {
+    background-color: #007BFF; /* Blue background for buttons */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding for buttons */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    font-size: 1em; /* Set font size */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+.modal-content1, .modal-content2 {
+    background-color: #fff; /* White background for modal content */
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px; /* Padding inside the modal */
+    border: 1px solid #888; /* Border for modal */
+    border-radius: 5px; /* Rounded corners */
+    width: 80%; /* Width of modal */
+    max-width: 500px; /* Maximum width of modal */
+}
+
+/* Close Button */
+.close {
+    color: #aaa; /* Gray color for close button */
+    float: right; /* Align to the right */
+    font-size: 28px; /* Size of close button */
+    font-weight: bold; /* Bold text */
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Change color on hover/focus */
+    text-decoration: none; /* No underline */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Form Styles */
+form {
+    display: flex; /* Use flexbox for form layout */
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 10px; /* Space between inputs */
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="password"] {
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Font size for inputs */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007BFF; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Less padding on small screens */
+    }
+
+    .modal-content1, .modal-content2 {
+        width: 90%; /* Increase modal width on small screens */
+    }
+}

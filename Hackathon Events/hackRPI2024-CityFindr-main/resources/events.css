@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif; /* Use a clean sans-serif font */
+    line-height: 1.6; /* Improve readability */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding around the content */
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #007BFF; /* Blue background for the navigation */
+    padding: 10px; /* Padding around the navigation links */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below the navigation */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* White text color */
+    padding: 10px 15px; /* Padding for links */
+    margin-right: 10px; /* Space between links */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #333; /* Dark gray color for headings */
+}
+
+h1 {
+    font-size: 2.5em; /* Large font size for main heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+h2 {
+    font-size: 2em; /* Medium font size for subheadings */
+    margin-top: 20px; /* Space above the subheading */
+}
+
+h3 {
+    font-size: 1.5em; /* Smaller font size for tertiary headings */
+    margin-top: 15px; /* Space above the tertiary heading */
+}
+
+/* Paragraphs */
+p {
+    margin: 10px 0; /* Space above and below paragraphs */
+    color: #555; /* Medium gray color for text */
+}
+
+/* Event Information Styles */
+.event-info {
+    background: white; /* White background for event info */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding inside the box */
+    margin-bottom: 20px; /* Space below each event info box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Rating Styles */
+.rating {
+    font-size: 1.2em; /* Slightly larger font for ratings */
+    color: #FFD700; /* Gold color for stars */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    nav a {
+        display: block; /* Stack links vertically on small screens */
+        margin: 5px 0; /* Space between stacked links */
+    }
+
+    body {
+        padding: 10px; /* Less padding on small screens */
+    }
+}
