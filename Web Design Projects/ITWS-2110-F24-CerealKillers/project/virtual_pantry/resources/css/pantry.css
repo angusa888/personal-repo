@@ -1,0 +1,32 @@
+.border {
+    background-color: #fff;
+}
+.image-container {
+   
+    background-size: cover; 
+    background-position: center; 
+    width:100%;
+    height: 300px; 
+    position: relative; 
+    color: white; 
+    overflow-y:auto;
+}
+
+.overlay-text {
+    position: absolute; /* Position the text absolutely within the border div */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to truly center the text */
+    color: white; /* Change text color */
+    font-size: 20px; /* Adjust font size */
+    text-align: center; /* Center the text */
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background for better readability */
+    padding: 10px; /* Optional: Add some padding */
+    border-radius: 5px; /* Optional: Round the corners of the background */
+}
+
+
+.title-link {
+    font-size: x-large;
+    
+}

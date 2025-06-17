@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEXED</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="instructions" style="display:none;">
+        <h2>Instructions</h2>
+        <p>Welcome to HEXED! Your goal is to match the color displayed in the top box.</p>
+        <p>Use the sliders to adjust the RGB values and create your color.</p>
+        <p>You have a limited time to match the color, so be quick!</p>
+        <p>Your score will be based on how close your color is to the target color.</p>
+        <p>Good luck!</p>
+    </div>
+    <button id="instructionsButton">Show Instructions</button>
+    
+    <div class="game-container">
+        <h1>HEXED</h1>
+        <div class="random-color" id="randomColor"></div>
+        <div class="player-color" id="playerColor"></div>
+
+        <!-- Add canvas for the pie-chart -->
+        <canvas id="scoreChart" width="200" height="200"></canvas>
+
+        <div class="sliders">
+            <label for="red">Red: <span id="redValue">128</span></label>
+            <input type="range" id="red" min="0" max="255" value="128">
+            
+            <label for="green">Green: <span id="greenValue">128</span></label>
+            <input type="range" id="green" min="0" max="255" value="128">
+            
+            <label for="blue">Blue: <span id="blueValue">128</span></label>
+            <input type="range" id="blue" min="0" max="255" value="128">
+        </div>
+        <button id="startButton">Start</button>
+        <p id="timer">Time left: 10 seconds</p>
+        <p id="score"></p>
+        <button id="replayButton" style="display:none;">Replay</button>
+    </div>
+
+    <!-- Separate table for top scores -->
+    <div class="scoreboard-container">
+        <h2>Top Scores</h2>
+        <table id="topScoresTable">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody id="topScoresBody">
+                <tr><td colspan="2">No scores yet</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
